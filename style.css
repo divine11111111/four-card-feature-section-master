@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+body {
+   font-family: "Poppins", sans-serif;
+}
+
+.main-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.con__head {
+   font-size: 2.5rem;
+   margin-bottom: 0;
+   color: #dddddd;
+   font-weight: 200;
+}
+
+.con__head2 {
+   font-size: 2.5rem;
+   margin-top: 0;
+   color: #242424c4;
+   font-weight: 600;
+}
+
+.head__content {
+   font-size: 15px;
+   text-align: center;
+   color: #bbbbbb;
+   width: 500px;
+}
+
+.sub-container {
+   max-width: 1000px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   align-items: center;
+   justify-content: center;
+   gap: 2rem;
+   margin: 3rem;
+}
+
+.subcon {
+   box-shadow: 0px 18px 38px -6px rgba(55, 166, 157, 0.44);
+   background-color: hsl(0, 0%, 100%);
+   width: 333.33px;
+height: 250px;
+   padding: 2rem;
+   border-radius: .5rem;
+   /* border-top: 5px solid black; */
+}
+
+.subcon1 {
+   border-top: 5px solid hsl(180, 62%, 55%);
+}
+.subcon2 {
+   border-top: 5px solid hsl(0, 78%, 62%);
+}
+.subcon3 {
+   border-top: 5px solid hsl(34, 97%, 64%);
+}
+.subcon4 {
+   border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.subcon__head {
+   font-weight: 600;
+   color: #242424c4;
+}
+
+.subcon__content {
+   color: #bbbbbb;
+   font-weight: 400;
+   font-size: 1.1rem;
+   margin-bottom: 2.5rem;
+}
+
+.subcon__img {
+   display: flex;
+   float: right;
+}
+
+.sub1 {
+   margin-bottom: 2rem;
+}
+
+
+/* --------------tablet display----------- */
+
+@media screen and (max-width: 1024px) {
+   .main-container {
+      justify-content: center;
+   }
+
+   .con__head, .con__head2 {
+      text-align: center;
+   }
+
+   .head__content {
+      width: 450px;
+   }
+
+   .sub-container {
+      grid-template-columns: 1fr;
+   }
+
+   .subcon {
+      width: 450px;
+   }
+}
+
+/* ------------ phone display------------- */
+@media screen and (max-width: 768px) {
+   .main-container {
+      justify-content: center;
+   }
+
+   .con__head, .con__head2 {
+      text-align: center;
+   }
+
+   .head__content {
+      width: 290px;
+   }
+
+   .sub-container {
+      grid-template-columns: 1fr;
+   }
+
+   .subcon {
+      width: 290px;
+   }
+}
